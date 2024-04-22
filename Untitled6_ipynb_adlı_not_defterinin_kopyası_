@@ -1,0 +1,155 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMXwtwURWeZV3BzJ64hJUDr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/semabeker/hu--bby162-2024/blob/main/Untitled6_ipynb_adl%C4%B1_not_defterinin_kopyas%C4%B1_\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "yeniListe = {\"Büyük Hun İmparatorluğu\": \"Teoman\", \"Göktürk Kağanlığı\": \"Bumin Kağan\", \"Avar Kağanlığı\": \"Bayan Kağan\", \"Uygur Kağanlığı\": \"Bilge Kül Kağan\", \"Karahanlılar\": \"Saltuk Buğra Han\", \"Gazne Devleti\": \"Alp Tekin\", \"Büyük Selçuklu Devleti\": \"Selçuk Bey\", \"Harzemşahlar\": \"Muhammed Harzemşah\", \"Altın Ordu Devleti\": \"Batur Han\", \"Timur İmparatorluğu\": \"Timur Gürkan\"}\n",
+        "print(yeniListe)"
+      ],
+      "metadata": {
+        "id": "UBepwyosWSEx",
+        "outputId": "ecda6a96-74ea-4ea8-a738-b43042f182f1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'Büyük Hun İmparatorluğu': 'Teoman', 'Göktürk Kağanlığı': 'Bumin Kağan', 'Avar Kağanlığı': 'Bayan Kağan', 'Uygur Kağanlığı': 'Bilge Kül Kağan', 'Karahanlılar': 'Saltuk Buğra Han', 'Gazne Devleti': 'Alp Tekin', 'Büyük Selçuklu Devleti': 'Selçuk Bey', 'Harzemşahlar': 'Muhammed Harzemşah', 'Altın Ordu Devleti': 'Batur Han', 'Timur İmparatorluğu': 'Timur Gürkan'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "yeniListe[\"Osmanlı İmparatorluğu\"] = \"Osman Bey\"\n",
+        "print(yeniListe)"
+      ],
+      "metadata": {
+        "id": "yU3Th3s5WUO8",
+        "outputId": "090344b4-202b-442b-d601-9c6042cd7c42",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'Büyük Hun İmparatorluğu': 'Teoman', 'Göktürk Kağanlığı': 'Bumin Kağan', 'Avar Kağanlığı': 'Bayan Kağan', 'Uygur Kağanlığı': 'Bilge Kül Kağan', 'Karahanlılar': 'Saltuk Buğra Han', 'Gazne Devleti': 'Alp Tekin', 'Büyük Selçuklu Devleti': 'Selçuk Bey', 'Harzemşahlar': 'Muhammed Harzemşah', 'Altın Ordu Devleti': 'Batur Han', 'Timur İmparatorluğu': 'Timur Gürkan', 'Osmanlı İmparatorluğu': 'Osman Bey'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "del yeniListe [\"Karahanlılar\"]\n",
+        "print(yeniListe)\n"
+      ],
+      "metadata": {
+        "id": "TOh3A3c8WY8K",
+        "outputId": "78b8e9e8-990a-4fe9-d42c-928ccf059aeb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'Büyük Hun İmparatorluğu': 'Teoman', 'Göktürk Kağanlığı': 'Bumin Kağan', 'Avar Kağanlığı': 'Bayan Kağan', 'Uygur Kağanlığı': 'Bilge Kül Kağan', 'Gazne Devleti': 'Alp Tekin', 'Büyük Selçuklu Devleti': 'Selçuk Bey', 'Harzemşahlar': 'Muhammed Harzemşah', 'Altın Ordu Devleti': 'Batur Han', 'Timur İmparatorluğu': 'Timur Gürkan', 'Osmanlı İmparatorluğu': 'Osman Bey'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(yeniListe)\n",
+        "guncellenecek = int(input(\"3: \"))\n",
+        "print(\"Uygur Kağanlığı: \" + yeniListe[guncellenecek3])\n",
+        "guncelIcerik = input(\"Kutluğ Bilge Kül Kağan: \")\n",
+        "yeniListe[guncellenecek3] = guncelIcerik\n",
+        "print(\"Güncelleme tamamlandı\")\n",
+        "print(yeniListe)"
+      ],
+      "metadata": {
+        "id": "eMi7yuQrWgXk",
+        "outputId": "1fb45430-16fe-47eb-aaf1-9cefa57dd21f",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Teoman', 'Karahanlılar']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "yeniListe = [\"Teoman\", \"Karahanlılar\"]\n",
+        "print(\"Teoman\" in yeniListe)\n"
+      ],
+      "metadata": {
+        "id": "_ZyCa1ydWpIV",
+        "outputId": "7d8eabd8-1c56-41b9-867e-8d6c55957e4b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
